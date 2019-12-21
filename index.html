@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Hitung Tarif MRT</title>
+    </head>
+    <body>
+        
+        <div class="box">
+            <h2>Hitung tarif perjalanan MRT</h2>
+            <form method="POST" action="#">              
+                    <div class="option">
+                        <label>Stasiun Asal</label>
+                        <select name="originOption" id="originOption">
+                          <option value="1">Bundaran HI</option>
+                          <option value="2">Dukuh Atas BNI</option>
+                          <option value="3">Setiabudi Astra</option>
+                          <option value="4">Bendungan Hilir</option>
+                          <option value="5">Istora Mandiri</option>
+                          <option value="6">Senayan</option>
+                          <option value="7">ASEAN</option>
+                          <option value="8">Blok M BCA</option>
+                          <option value="9">Blok A</option>
+                          <option value="10">Haji Nawi</option>
+                          <option value="11">Cipete Raya</option>
+                          <option value="12">Fatmawati</option>
+                          <option value="13">Lebak Bulus Grab</option>
+                        </select>
+                        
+                    </div>
+
+                    <div class="option">
+                        <label>Stasiun Tujuan</label>
+                        <select name="destinationOption" id="destinationOption">
+                          <option value="1">Bundaran HI</option>
+                          <option value="2">Dukuh Atas BNI</option>
+                          <option value="3">Setiabudi Astra</option>
+                          <option value="4">Bendungan Hilir</option>
+                          <option value="5">Istora Mandiri</option>
+                          <option value="6">Senayan</option>
+                          <option value="7">ASEAN</option>
+                          <option value="8">Blok M BCA</option>
+                          <option value="9">Blok A</option>
+                          <option value="10">Haji Nawi</option>
+                          <option value="11">Cipete Raya</option>
+                          <option value="12">Fatmawati</option>
+                          <option value="13">Lebak Bulus Grab</option>
+                        </select>
+                        
+                    </div>
+
+                    <div class="btn-wrap field-outer">
+                        <button id="form-submit" type="button" onclick=hitungTarif()>Hitung</button>
+                    </div>
+                    <div id="result"></div>
+            </form>
+        </div>
+        <script src="app.js"></script>
+    </body>
+   
+</html>
