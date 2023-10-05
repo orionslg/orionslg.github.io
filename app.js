@@ -28,7 +28,7 @@ function hitungTarif()
     }
     else
     {
-        tarif = Math.abs(destination - origin) * 1000 + 3000;
+        tarif = Math.abs(destination - origin - 1) * 1000 + 3000;
     }
     
     document.getElementById("result").innerHTML = `Tarif: Rp. ${tarif}`;
